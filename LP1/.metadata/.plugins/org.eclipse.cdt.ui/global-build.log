@@ -1,0 +1,67 @@
+23:13:10 **** Rebuild of configuration Debug for project B3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\B3.o" "..\\src\\B3.cpp" 
+g++ -o B3.exe "src\\B3.o" 
+Info: Nothing to build for B3
+23:15:33 **** Incremental Build of configuration Debug for project B3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\B3.o" "..\\src\\B3.cpp" 
+..\src\B3.cpp: In function 'void printAllocation(const std::vector<int>&, const std::vector<int>&)':
+..\src\B3.cpp:18:23: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   18 |     for (int i = 0; i < ProcessTime.size(); i++) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~
+..\src\B3.cpp: In function 'void FirstFit(std::vector<int>, const std::vector<int>&)':
+..\src\B3.cpp:31:23: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   31 |     for (int i = 0; i < ProcessTime.size(); i++) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~
+..\src\B3.cpp: In function 'void BestFit(std::vector<int>, const std::vector<int>&)':
+..\src\B3.cpp:46:23: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   46 |     for (int i = 0; i < ProcessTime.size(); i++) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~
+..\src\B3.cpp: In function 'void WorstFit(std::vector<int>, const std::vector<int>&)':
+..\src\B3.cpp:66:23: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   66 |     for (int i = 0; i < ProcessTime.size(); i++) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~
+..\src\B3.cpp: In function 'void NextFit(std::vector<int>, const std::vector<int>&)':
+..\src\B3.cpp:87:23: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   87 |     for (int i = 0; i < ProcessTime.size(); i++) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~
+g++ -o B3.exe "src\\B3.o" 
+Info: Nothing to build for B3
+23:18:34 **** Rebuild of configuration Debug for project SchedulingB2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SchedulingB2.o" "..\\src\\SchedulingB2.cpp" 
+..\src\SchedulingB2.cpp: In member function 'void SchedulingAlgorithm::Priority()':
+..\src\SchedulingB2.cpp:108:26: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+  108 |             for(int j=0;j<Arr.size();j++)
+      |                         ~^~~~~~~~~~~
+..\src\SchedulingB2.cpp:90:13: warning: unused variable 'pt' [-Wunused-variable]
+   90 |         int pt = 100;
+      |             ^~
+g++ -o SchedulingB2.exe "src\\SchedulingB2.o" 
+Info: Nothing to build for SchedulingB2
+23:22:14 **** Rebuild of configuration Debug for project PagereplacementB4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PagereplacementB4.o" "..\\src\\PagereplacementB4.cpp" 
+..\src\PagereplacementB4.cpp: In member function 'void Paging::FIFO()':
+..\src\PagereplacementB4.cpp:74:31: warning: comparison of integer expressions of different signedness: 'std::unordered_set<int>::size_type' {aka 'long long unsigned int'} and 'int' [-Wsign-compare]
+   74 |         if (currentSet.size() < frames)
+      |             ~~~~~~~~~~~~~~~~~~^~~~~~~~
+g++ -o PagereplacementB4.exe "src\\PagereplacementB4.o" 
+Info: Nothing to build for PagereplacementB4
+Info: Nothing to build for PagereplacementB4
+Info: Nothing to build for PagereplacementB4
+20:00:08 **** Rebuild of configuration Debug for project Pass1 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pass1.o" "..\\src\\Pass1.cpp" 
+..\src\Pass1.cpp: In member function 'void Pass1::execute()':
+..\src\Pass1.cpp:72:33: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<std::pair<std::__cxx11::basic_string<char>, int> >::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   72 |                 for (; litindex < littab.size(); litindex++)
+      |                        ~~~~~~~~~^~~~~~~~~~~~~~~
+..\src\Pass1.cpp:90:33: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<std::pair<std::__cxx11::basic_string<char>, int> >::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   90 |                 for (; litindex < littab.size(); litindex++)
+      |                        ~~~~~~~~~^~~~~~~~~~~~~~~
+g++ -o Pass1.exe "src\\Pass1.o" 
+Info: Nothing to build for Pass1
+Info: Nothing to build for Pass1
+Info: Nothing to build for Pass1
